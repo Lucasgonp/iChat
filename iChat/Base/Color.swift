@@ -13,8 +13,11 @@ struct Color {
     static var textColorSecundary: UIColor =  .gray
     
     static var white: UIColor =  .white
+    static var clear: UIColor = .clear
     
     static var blue: UIColor = .blue
     static var lightBlue: UIColor = UIColor(red: 0, green: 134/255, blue: 249/255, alpha: 1)
+    static var lightGray: UIColor = UIColor.lightGray
+    static var extraLightGray: UIColor = UIColor(white: 0.95, alpha: 1)
     
 }

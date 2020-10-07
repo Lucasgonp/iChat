@@ -30,6 +30,7 @@ class CustomTabBarController: UITabBarController {
         let friendsController = FriendsController(collectionViewLayout: layout)
         let recentMessagesNavController = UINavigationController(rootViewController: friendsController)
         recentMessagesNavController.tabBarItem.title = "Recente"
+        recentMessagesNavController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: Font.fontTextRegular(size: 20)]
         recentMessagesNavController.tabBarItem.image =  UIImage(named: "recent")
         viewControllers = [recentMessagesNavController]
     }
@@ -39,6 +40,8 @@ class CustomTabBarController: UITabBarController {
         let viewController = UIViewController()
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem.title = title
+        navController.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: Font.fontTextRegular(size: 14)]
+
         navController.tabBarItem.image = UIImage(named: imageName)
         return navController
     }

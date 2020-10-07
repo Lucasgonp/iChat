@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FriendsController.swift
 //  iChat
 //
 //  Created by Lucas Pereira on 21/07/20.
@@ -15,11 +15,12 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
     
     var messages: [Message]?
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
         initialNavBar()
         
         collectionView.backgroundColor = UIColor.white
@@ -30,6 +31,9 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
     
     //MARK:- Functions
     func initialNavBar() {
+        let backButton: UIBarButtonItem = UIBarButtonItem(image: nil, style: .done, target: self, action: nil)
+        navigationItem.backBarButtonItem = backButton
+        
         let userProfileImageView: UIImageView = UIImageView(image: UIImage(named: "lucas"))
         let userProfileView: UIView = UIView()
         userProfileView.addSubview(userProfileImageView)
@@ -49,7 +53,6 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
         
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     if let count = messages?.count {
             return count
@@ -66,7 +69,7 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 100)
+        return CGSize(width: view.frame.width, height: 90)
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -82,9 +85,9 @@ class MessageCell: BaseCell {
     
     override var isHighlighted: Bool {
         didSet {
-            backgroundColor = isHighlighted ? Color.lightBlue : UIColor.white
+            backgroundColor = isHighlighted ? Color.lightBlue : Color.white
             nameLabel.textColor = isHighlighted ? Color.white : Color.textColorPrimary
-            messageLabel.textColor = isHighlighted ? Color.white : Color.textColorPrimary
+            messageLabel.textColor = isHighlighted ? Color.white : Color.textColorSecundary
             timeLabel.textColor = isHighlighted ? Color.white : Color.textColorPrimary
         }
     }
@@ -134,8 +137,8 @@ class MessageCell: BaseCell {
     let nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = Color.textColorPrimary
-        label.font = Font.fontTextMedium(size: 16)
-        label.text = "Leonardo Pimentel"
+        label.font = Font.fontTextBold(size: 18)
+        label.text = "friend_name"
         return label
     }()
     
@@ -143,14 +146,14 @@ class MessageCell: BaseCell {
         let label = UILabel()
         label.textColor = Color.textColorSecundary
         label.font = Font.fontTextRegular(size: 14)
-        label.text = "Mensagem nova de seu amigo..."
+        label.text = "friend_time"
         return label
     }()
     
     let timeLabel: UILabel = {
         let label = UILabel()
         label.textColor = Color.textColorPrimary
-        label.font = Font.fontTextLight(size: 14)
+        label.font = Font.fontTextRegular(size: 14)
         label.textAlignment = .right
         label.text = "12:51"
         return label
@@ -180,7 +183,7 @@ class MessageCell: BaseCell {
         addConstraint(NSLayoutConstraint(item: profileImageView, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
         
         addConstraintsWithFormat(format: "H:|-82-[v0]|", views: dividerLineView)
-        addConstraintsWithFormat(format: "V:[v0(1)]|", views: dividerLineView)
+        addConstraintsWithFormat(format: "V:[v0(0.5)]|", views: dividerLineView)
 
     }
     

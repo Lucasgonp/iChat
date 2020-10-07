@@ -2,7 +2,7 @@
 //  Message+CoreDataProperties.swift
 //  iChat
 //
-//  Created by Lucas Pereira on 22/07/20.
+//  Created by Lucas Pereira on 26/07/20.
 //  Copyright © 2020 LucasChatOS. All rights reserved.
 //
 //
@@ -19,6 +19,7 @@ extension Message {
 
     @NSManaged public var date: Date?
     @NSManaged public var text: String?
+    @NSManaged public var isSender: Bool
     @NSManaged public var friend: Friend?
 
 }

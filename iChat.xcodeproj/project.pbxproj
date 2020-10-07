@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		7607D60D24C735E7003AAB3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607D60C24C735E7003AAB3F /* AppDelegate.swift */; };
 		7607D60F24C735E7003AAB3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607D60E24C735E7003AAB3F /* SceneDelegate.swift */; };
-		7607D61124C735E7003AAB3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607D61024C735E7003AAB3F /* ViewController.swift */; };
+		7607D61124C735E7003AAB3F /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607D61024C735E7003AAB3F /* FriendsController.swift */; };
 		7607D61924C735E9003AAB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7607D61824C735E9003AAB3F /* Assets.xcassets */; };
 		7607D61C24C735E9003AAB3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7607D61A24C735E9003AAB3F /* LaunchScreen.storyboard */; };
 		7607D62724C735E9003AAB3F /* iChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607D62624C735E9003AAB3F /* iChatTests.swift */; };
 		7607D63224C735E9003AAB3F /* iChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607D63124C735E9003AAB3F /* iChatUITests.swift */; };
+		765271B2252B7D63009379A3 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 765271B0252B7D63009379A3 /* Montserrat-Regular.ttf */; };
+		765271B3252B7D63009379A3 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 765271B1252B7D63009379A3 /* Montserrat-Bold.ttf */; };
+		76A77F2F24CF885400DFD8EC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A77F2E24CF885400DFD8EC /* Account.swift */; };
 		76E3BB5624C877F400489605 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BB5524C877F400489605 /* Font.swift */; };
 		76E3BB5C24C87B7F00489605 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E3BB5B24C87B7F00489605 /* Color.swift */; };
 		76F2BBEF24C89C0800905834 /* FriendsControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F2BBEE24C89C0800905834 /* FriendsControllerHelper.swift */; };
@@ -47,7 +50,7 @@
 		7607D60924C735E7003AAB3F /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7607D60C24C735E7003AAB3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7607D60E24C735E7003AAB3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7607D61024C735E7003AAB3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7607D61024C735E7003AAB3F /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
 		7607D61824C735E9003AAB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7607D61B24C735E9003AAB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7607D61D24C735E9003AAB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,17 +60,11 @@
 		7607D62D24C735E9003AAB3F /* iChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7607D63124C735E9003AAB3F /* iChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iChatUITests.swift; sourceTree = "<group>"; };
 		7607D63324C735E9003AAB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765271B0252B7D63009379A3 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		765271B1252B7D63009379A3 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		76A77F2E24CF885400DFD8EC /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		76E3BB5524C877F400489605 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		76E3BB5B24C87B7F00489605 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		76E3BB5D24C8845400489605 /* HelveticaNowText-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-LightItalic.otf"; sourceTree = "<group>"; };
-		76E3BB5E24C8845400489605 /* HelveticaNowText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-Regular.otf"; sourceTree = "<group>"; };
-		76E3BB5F24C8845400489605 /* HelveticaNowText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-Medium.otf"; sourceTree = "<group>"; };
-		76E3BB6024C8845400489605 /* HelveticaNowText-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-Black.otf"; sourceTree = "<group>"; };
-		76E3BB6124C8845400489605 /* HelveticaNowText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-Light.otf"; sourceTree = "<group>"; };
-		76E3BB6424C8845400489605 /* HelveticaNowText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-Bold.otf"; sourceTree = "<group>"; };
-		76E3BB6524C8845400489605 /* HelveticaNowText-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-MediumItalic.otf"; sourceTree = "<group>"; };
-		76E3BB6624C8845400489605 /* HelveticaNowText-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-Thin.otf"; sourceTree = "<group>"; };
-		76E3BB6724C8845500489605 /* HelveticaNowText-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNowText-ThinItalic.otf"; sourceTree = "<group>"; };
 		76F2BBEE24C89C0800905834 /* FriendsControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsControllerHelper.swift; sourceTree = "<group>"; };
 		76F2BC0124C89F3A00905834 /* iChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iChat.xcdatamodel; sourceTree = "<group>"; };
 		76F2BC0324C8A00700905834 /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -126,6 +123,7 @@
 		7607D60B24C735E7003AAB3F /* iChat */ = {
 			isa = PBXGroup;
 			children = (
+				76A77F2D24CF884800DFD8EC /* Account */,
 				76F2BC0F24CA364500905834 /* Utils */,
 				76E3BB5424C877D700489605 /* Font */,
 				76E3BB5724C877FD00489605 /* Base */,
@@ -164,18 +162,19 @@
 			path = iChatUITests;
 			sourceTree = "<group>";
 		};
+		76A77F2D24CF884800DFD8EC /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				76A77F2E24CF885400DFD8EC /* Account.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		76E3BB5424C877D700489605 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				76E3BB6024C8845400489605 /* HelveticaNowText-Black.otf */,
-				76E3BB6424C8845400489605 /* HelveticaNowText-Bold.otf */,
-				76E3BB6124C8845400489605 /* HelveticaNowText-Light.otf */,
-				76E3BB5D24C8845400489605 /* HelveticaNowText-LightItalic.otf */,
-				76E3BB5F24C8845400489605 /* HelveticaNowText-Medium.otf */,
-				76E3BB6524C8845400489605 /* HelveticaNowText-MediumItalic.otf */,
-				76E3BB5E24C8845400489605 /* HelveticaNowText-Regular.otf */,
-				76E3BB6624C8845400489605 /* HelveticaNowText-Thin.otf */,
-				76E3BB6724C8845500489605 /* HelveticaNowText-ThinItalic.otf */,
+				765271B1252B7D63009379A3 /* Montserrat-Bold.ttf */,
+				765271B0252B7D63009379A3 /* Montserrat-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -192,7 +191,7 @@
 		76E3BB6824C884AA00489605 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7607D61024C735E7003AAB3F /* ViewController.swift */,
+				7607D61024C735E7003AAB3F /* FriendsController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -325,6 +324,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765271B3252B7D63009379A3 /* Montserrat-Bold.ttf in Resources */,
+				765271B2252B7D63009379A3 /* Montserrat-Regular.ttf in Resources */,
 				7607D61C24C735E9003AAB3F /* LaunchScreen.storyboard in Resources */,
 				7607D61924C735E9003AAB3F /* Assets.xcassets in Resources */,
 			);
@@ -352,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F2BC0C24CA1BF100905834 /* ChatLogController.swift in Sources */,
-				7607D61124C735E7003AAB3F /* ViewController.swift in Sources */,
+				7607D61124C735E7003AAB3F /* FriendsController.swift in Sources */,
 				76F2BC0924C8A00700905834 /* Friend+CoreDataClass.swift in Sources */,
 				76F2BC0A24C8A00700905834 /* Friend+CoreDataProperties.swift in Sources */,
 				7607D60D24C735E7003AAB3F /* AppDelegate.swift in Sources */,
@@ -364,6 +365,7 @@
 				76F2BC1124CA366400905834 /* CustomTabBarController.swift in Sources */,
 				76F2BBEF24C89C0800905834 /* FriendsControllerHelper.swift in Sources */,
 				76F2BC0724C8A00700905834 /* Message+CoreDataClass.swift in Sources */,
+				76A77F2F24CF885400DFD8EC /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
