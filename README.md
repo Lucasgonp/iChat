@@ -1,0 +1,3 @@
+# iChat
+
+Projeto teste (CoreData)
