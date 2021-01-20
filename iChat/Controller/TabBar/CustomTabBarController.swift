@@ -13,6 +13,10 @@ class CustomTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialData()
+        if #available(iOS 13.0, *) {
+                // Always adopt a light interface style.
+                overrideUserInterfaceStyle = .light
+            }
         
         let navControllerCalls = createDummyNavControllerWithTitle(title: "Chamadas", imageName: "calls")
         let navControllerPeople = createDummyNavControllerWithTitle(title: "Contatos", imageName: "people")

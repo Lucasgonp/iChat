@@ -22,12 +22,12 @@ struct Font {
 extension Font {
     
     static func fontTextBold(size: CGFloat) -> UIFont {
-    let fontTextBold: UIFont = UIFont(name:"Montserrat-Bold", size: size)!
+    let fontTextBold: UIFont = UIFont(name:"Didot_LT_Std-Bold", size: size) ?? .systemFont(ofSize: size)
     return fontTextBold
     }
     
     static func fontTextRegular(size: CGFloat) -> UIFont {
-    let fontTextRegular: UIFont = UIFont(name:"Montserrat-Regular", size: size)!
+        let fontTextRegular: UIFont = UIFont(name:"Didot-Regular", size: size) ?? .systemFont(ofSize: size)
     return fontTextRegular
     }
 }

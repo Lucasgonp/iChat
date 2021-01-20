@@ -22,8 +22,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Montserrat-Bold.ttf</string>
-		<string>Montserrat-Regular.ttf</string>
+		<string>Didot_LT_Std-Bold.otf</string>
+		<string>Didot-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
