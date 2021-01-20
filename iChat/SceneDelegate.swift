@@ -16,10 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let winScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: winScene)
-        let layout = UICollectionViewFlowLayout()
-        let friendsController = FriendsController(collectionViewLayout: layout)
-        window?.rootViewController = friendsController
-        window?.makeKeyAndVisible()
+        
+        let controller = CustomTabBarController()
+        self.window!.rootViewController = controller
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
